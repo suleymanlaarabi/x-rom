@@ -15,7 +15,7 @@ const PageContainer = ({ children }: PropsWithChildren) => {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
         padding: 20,
       }}
     >
