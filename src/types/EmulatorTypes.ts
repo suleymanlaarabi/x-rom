@@ -10,4 +10,10 @@ export enum EmulatorTypes {
   GameboyColor = "Gameboy Color",
   // -- Xbox --
   Xbox360 = "Xbox360",
+  Xbox = "Xbox",
+  // -- PlayStaion --
+  PS1 = "PS1",
+  PS2 = "PS2",
+  PS3 = "PS3",
+  PSV = "PSV",
 }
