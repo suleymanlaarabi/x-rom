@@ -16,6 +16,7 @@ import {
   useBreakpointValue,
   useDisclosure,
   useColorMode,
+  Avatar,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -45,11 +46,7 @@ export default function NavBar() {
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
-        <Flex
-          flex={{ base: 1, md: "auto" }}
-          ml={{ base: -2 }}
-          display={{ base: "flex", md: "none" }}
-        >
+        <Flex display={{ base: "flex", md: "none" }}>
           <IconButton
             onClick={onToggle}
             icon={
@@ -59,18 +56,33 @@ export default function NavBar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-          <Text
+        <Flex
+          flex={{ base: 1 }}
+          justifyContent={{ base: "space-around", md: "start" }}
+        >
+          <Flex
             as={NavLink}
             to={"/"}
-            textAlign={useBreakpointValue({ base: "center", md: "left" })}
-            fontFamily={"heading"}
-            color={useColorModeValue("gray.800", "white")}
+            gap={5}
+            alignItems={"center"}
+            justifyContent={"center"}
           >
-            X-ROM
-          </Text>
+            <Avatar src="/X-ROM.png" />
+            <Text
+              textAlign={useBreakpointValue({ base: "center", md: "left" })}
+              fontFamily={"heading"}
+              color={useColorModeValue("gray.800", "white")}
+            >
+              X-ROM
+            </Text>
+          </Flex>
 
-          <Flex display={{ base: "none", md: "flex" }} ml={10}>
+          <Flex
+            alignItems={"center"}
+            justifyContent={"center"}
+            display={{ base: "none", md: "flex" }}
+            ml={10}
+          >
             <DesktopNav />
           </Flex>
         </Flex>
