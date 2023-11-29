@@ -16,6 +16,7 @@ const {
   NintendoGameCube,
   GameboyAdvance,
   GameboyColor,
+  NES,
   // -- Xbox --
   Xbox360,
   Xbox,
@@ -40,6 +41,7 @@ export const platforms: Platforms = [
       Nintendo64,
       NintendoDS,
       NintendoGameCube,
+      NES,
     ],
   },
   {
