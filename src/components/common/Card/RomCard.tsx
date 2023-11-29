@@ -43,7 +43,7 @@ const RomCard = memo(
           maxW={"330px"}
           height={"100%"}
           w={"full"}
-          bg={useColorModeValue("white", "gray.800")}
+          bg={useColorModeValue("gray.50", "gray.700")}
           boxShadow={"2xl"}
           rounded={"md"}
           overflow={"hidden"}
@@ -77,7 +77,7 @@ const RomCard = memo(
             flexDirection={"column"}
             justifyContent={"space-between"}
             height={"40%"}
-            bg={useColorModeValue("gray.50", "gray.900")}
+            bg={useColorModeValue("gray.300", "gray.900")}
             px={10}
             py={5}
           >
