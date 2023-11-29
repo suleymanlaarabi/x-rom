@@ -8,6 +8,7 @@ export enum EmulatorTypes {
   NintendoGameCube = "Nintendo GameCube",
   GameboyAdvance = "Gameboy Advance",
   GameboyColor = "Gameboy Color",
+  NES = "NES",
   // -- Xbox --
   Xbox360 = "Xbox360",
   Xbox = "Xbox",
