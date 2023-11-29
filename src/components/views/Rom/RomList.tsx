@@ -10,7 +10,7 @@ const RomList = ({ roms }: RomsListProps) => {
   const [numberLoaded, setNumberLoaded] = useState(4);
   return (
     <>
-      <Flex justifyContent={"center"} gap={15} wrap={"wrap"}>
+      <Flex justifyContent={"center"} gap={18} wrap={"wrap"}>
         {roms.slice(0, numberLoaded).map((rom) => {
           return <RomCard key={rom.id} {...rom} />;
         })}
