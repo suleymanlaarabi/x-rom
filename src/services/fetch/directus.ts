@@ -12,7 +12,7 @@ export async function getRoms(
       urls.directus +
         "items/roms?filter[platforms][_eq]=" +
         platforms +
-        "&limit=9000"
+        "&limit=15000"
     );
   } else {
     result = await axios.get(urls.directus + "items/roms");
