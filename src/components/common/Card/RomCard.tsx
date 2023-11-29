@@ -12,6 +12,7 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const RomCard = memo(
   ({
@@ -38,13 +39,26 @@ const RomCard = memo(
     }
 
     return (
-      <Center w={"330px"} height={"510px"} py={6}>
+      <Center
+        whileHover={{ scale: 1.05 }}
+        whileTap={{
+          scale: 0.9,
+          borderRadius: "100%",
+        }}
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={".3s"}
+        as={motion.div}
+        w={"330px"}
+        height={"510px"}
+        py={6}
+      >
         <Box
           maxW={"330px"}
           height={"100%"}
           w={"full"}
           bg={useColorModeValue("gray.50", "gray.700")}
-          boxShadow={"2xl"}
+          boxShadow={"xl"}
           rounded={"md"}
           overflow={"hidden"}
         >
